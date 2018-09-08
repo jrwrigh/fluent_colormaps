@@ -4,9 +4,9 @@ import os
 scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
 
 ## Inputs
-csv_path = scriptpath / './original_csvs/extended-black-body-table-float-0128.csv'
-colormapfilename = scriptpath / 'extended_blackbody.colormap'
-colormapname = 'ext-blkbdy'
+csv_path = scriptpath / './original_csvs/extended-kindlmann-table-float-0128.csv'
+colormapfilename = scriptpath / 'kindlmann_extended.colormap'
+colormapname = 'kindlmann-extended'
 csv_has_header = True
 
 # Other stuff:
