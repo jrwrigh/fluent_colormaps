@@ -24,4 +24,29 @@ This will add `read-colormap` and `write-colormap` functions to the `/file` menu
 
 After you do that, the color map will be available for use.
 
+## Color Map Format
+
+```
+("fluent_name"
+(fraction1 R1 G1 B1)
+(fraction2 R2 G2 B2)
+)
+```
+The color map file is parenthetically delimited. First item is the string that Fluent uses to reference the colormap. 
+After that, each color point is enclosed in parentheses and is made of 4 items: the fraction value (ie. what the color represents in a scale from 0 → 1) and the RGB code normalized from 0 → 1.
+
+Here's an example from `kindlmann.colormap`:
+
+```
+("kindlmann"
+(0.0 0.0 0.0 0.0)
+(0.00787401574803 0.0361829637519 0.00175999531726 0.0321710772612)
+(0.0157480314961 0.0666376124681 0.00324511662403 0.0631800420914)
+.
+.
+.
+(0.992125984252 0.999169719339 0.988946878303 0.98599754002)
+(1.0 1.0 1.0 1.0)
+)
+```
 
