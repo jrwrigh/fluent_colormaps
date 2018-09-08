@@ -20,7 +20,6 @@ header = f'("{fluentcolormapname}"\n'
 
 with csv_path.open() as csvfile:
     csvreader = csv.reader(csvfile)
-    # if csv_has_header: fiel
     with open(colormapfilename, 'w+') as file:
         file.write(header)
         for line in csvreader:
@@ -38,3 +37,4 @@ with csv_path.open() as csvfile:
                 n = [float(x) for x in line]
                 line_to_write = f'({n[0]} {n[1]} {n[2]} {n[3]})'
                 file.write(line_to_write + '\n')
+        file.write(')')
