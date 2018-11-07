@@ -1,17 +1,22 @@
 import csv
 from pathlib import Path
 import os
-    # get path of the script
-scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
+
+# get path of the script
+choice = 2
+if choice == 1:
+    scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
+elif choice == 2:
+    scriptpath = Path('./colormaps')
 
 ## Inputs:
-    # Path to the CSV file
-csv_path = scriptpath / './original_csvs/extended-kindlmann-table-float-0128.csv'
-    # Name and location for the colormap to be created
-colormapfilename = scriptpath / 'kindlmann_extended.colormap'
-    # Name that Fluent uses to reference the colormap
-fluentcolormapname = 'kindlmann-extended'
-    # Does CSV have header?
+# Path to the CSV file
+csv_path = scriptpath / './original_csvs/viridis-table-float-0128.csv'
+# Name and location for the colormap to be created
+colormapfilename = scriptpath / 'viridis.colormap'
+# Name that Fluent uses to reference the colormap
+fluentcolormapname = 'viridis'
+# Does CSV have header?
 csv_has_header = True
 
 ## Translation:
