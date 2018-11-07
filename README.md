@@ -1,11 +1,15 @@
 # fluent_colormaps
+#### Working in ANSYS CFD Post or CFX? Check out [cfdpost_colormaps](https://github.com/u2berggeist/cfdpost_colormaps)!
+[![Say Thanks!](https://img.shields.io/badge/Say-Thanks&#33;-orange.svg?longCache=true&style=flat-square)](https://saythanks.io/to/u2berggeist)
 Here are tools that allow users to use different color maps in ANSYS Fluent without having to enter then in manually or have them buried in a settings file. It includes a scheme file that allows simple import/export of colormaps as well as some selected colormaps.
 
 The scheme script for importing the color maps to Fluent is taken from [this](http://www.cadfamily.com/download-pdf/FLUENT12/AutoUGM03_fluent_tips.pdf) pdf presentation. It is also included in this repository for archiving purposes.
 
-The example colormaps (other than `thermacam.colormap` which came from the presentation linked above) are taken from [Kenneth Moreland's webpage](https://www.kennethmoreland.com/color-advice/) on color map advice.
+The example colormaps (other than `thermacam.colormap` which came from the presentation linked above) are taken from [Kenneth Moreland's webpage](https://www.kennethmoreland.com/color-advice/) on color map advice*.
 
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
+
+\*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website. It is no longer there and is replaced by the "Inferno" colormap. The "Extended Black Body" and "Inferno" are not quite the same, with "Inferno" being more muted in it's color pallette which I personally don't like. I'm currently (2018-11-07) contacting Kenneth to get his comment on the matter.
 
 ## Use:
 
