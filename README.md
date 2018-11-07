@@ -8,6 +8,8 @@ The scheme script for importing the color maps to Fluent is taken from [this](ht
 
 The example colormaps (other than `thermacam.colormap` which came from the presentation linked above) are taken from [Kenneth Moreland's webpage](https://www.kennethmoreland.com/color-advice/) on color map advice*.
 
+Examples of the different colormap options are in [this imgur album](https://imgur.com/a/hL35KCY). This is an axisymmetric CFD simulation with flow going right to left. Notice the differences in the appearance of turbulence.
+
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
 
 \*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website. It is no longer there and is replaced by the "Inferno" colormap. The "Extended Black Body" and "Inferno" are not quite the same, with "Inferno" being more muted in it's color pallette which I personally don't like. I'm currently (2018-11-07) contacting Kenneth to get his comment on the matter.
