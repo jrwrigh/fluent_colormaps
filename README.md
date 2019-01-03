@@ -26,7 +26,7 @@ See [this article](https://matplotlib.org/users/colormaps.html) from matplotlib 
 
 Bottom line: don't use rainbow. \#endrainbow
 
-## Ok, so what is the repository?
+## Ok, so what is this repository?
 
 Here are tools that allow users to use different color maps in ANSYS Fluent without having to enter then in manually or have them buried in a settings file. It includes a scheme file that allows simple import/export of colormaps as well as some selected colormaps.
 
