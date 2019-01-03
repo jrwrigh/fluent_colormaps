@@ -12,7 +12,8 @@ Examples of the different colormap options are in [`Examples.md`](./Examples.md)
 
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
 
-\*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website (though it is still available on [GitHub](https://github.com/kennethmoreland-com/kennethmoreland-com.github.io/tree/master/color-advice)). After discussion with Kenneth over email, it was dropped in favor of "Inferno" as they're both very similar to each other, with "Inferno" being the more rigorously vetted option. That said, "Extended Black Body" isn't bad, just maybe not as good as "Inferno".
+\*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website (though it is still available on [GitHub](https://github.com/kennethmoreland-com/kennethmoreland-com.github.io/tree/master/color-advice)). After discussion with Kenneth over email, it was dropped in favor of "Inferno" as they're both very similar to each other. 
+"Inferno" is an interpolation over the [CIELAB colorspace](https://en.wikipedia.org/wiki/CIELAB_color_space) which is calibrated to correlate between the numerical change vs human-percieved change. "Extended Black Body" on the other hand is simply an interpolation between a few hues that is corrected for brightness (ie. not as rigorous). That said, "Extended Black Body" isn't bad, its just not as good as "Inferno", but is definitely better than rainbow!
 
 ## Use:
 
