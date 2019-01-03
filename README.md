@@ -58,3 +58,16 @@ Here's an example from `kindlmann.colormap`:
 )
 ```
 
+## Make Fluent load colormaps automatically
+
+To do this, you simply need to edit/create the `.fluent` in your home directory (`~` for Linux, `C:\Users\[your account username]`). The `.fluent` file is loaded whenever you start Fluent. The file will look like this:
+
+```scheme
+(load "[Path to fluent_colormaps]/rw_colormap.scm")
+
+(ti-menu-load-string "file/read-colormap [Path to fluent_colormaps]/colormaps/blackbody_extended.colormap")
+(ti-menu-load-string "file/read-colormap [Path to fluent_colormaps]/colormaps/inferno.colormap")
+```
+
+The first line loads the read/write colormap commands while the last 3 load the "Extended Blackbody" and "Inferno" into Fluent. You can add in more of the colormaps simply by copy/pasting the line again.
+
