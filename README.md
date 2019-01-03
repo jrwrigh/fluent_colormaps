@@ -8,7 +8,7 @@ Because rainbow is bad.
 
 To start, what are colormaps for? They're a visualization tool. They attempt to communicate a change in numerical value from a sample set by changing color. The "greater" the change in color, the greater the change in numerical value. 
 
-The rainbow is a linear scale of light wavelengths. *However*, how humans percieve a rainbow scale is **not** linear. In fact, the correlation between the percieved color change in a rainbow colormap and the actual numerical change is quite poor. 
+The rainbow is a linear scale of light wavelengths. *However*, how humans perceive a rainbow scale is **not** linear. In fact, the correlation between the perceived color change in a rainbow colormap and the actual numerical change is quite poor. 
 
 There are several instances where professionals have made incorrect conclusions from rainbow-based visualizations. Doctors have been found to make better diagnoses by using alternate colormaps:
 
@@ -18,11 +18,11 @@ and climate scientists have misinterpreted their own data by using rainbow color
 
 >  The same sub-tropical ‘front’ is apparent in rainbow, but far less clear in the sequential scheme.... [the sub-tropical 'front'] is a mirage, an artefact of the choice of colour scale. [Source](http://www.climate-lab-book.ac.uk/2016/why-rainbow-colour-scales-can-be-misleading/)
 
-See [this article](https://matplotlib.org/users/colormaps.html) from matplotlib that details more about the issues in colormaps. In particular, compare the plots of perceptualy uniform colormaps and the more common colormaps from the same page (the lower plot in particular). These are ploted based on percieved brightness, so linear is the goal. As you can see, rainbow and the like are quite poor.
+See [this article](https://matplotlib.org/users/colormaps.html) from matplotlib that details more about the issues in colormaps. In particular, compare the plots of perceptually uniform colormaps and the more common colormaps from the same page (the lower plot in particular). These are plotted based on perceived brightness, so linear is the goal. As you can see, rainbow and the like are quite poor.
 
-![perceptualy uniform colormaps](https://matplotlib.org/users/plotting/colormaps/lightness_00.png)
+![perceptually uniform colormaps](https://matplotlib.org/users/plotting/colormaps/lightness_00.png)
 
-![more common colormaps](https://matplotlib.org/users/plotting/colormaps/lightness_05.png)
+![more common colormaps](images/misc_colormaps_from_matplotlib.png)
 
 Bottom line: don't use rainbow. \#endrainbow
 
@@ -39,7 +39,7 @@ Examples of the different colormap options are in [`Examples.md`](./Examples.md)
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
 
 \*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website (though it is still available on [GitHub](https://github.com/kennethmoreland-com/kennethmoreland-com.github.io/tree/master/color-advice)). After discussion with Kenneth over email, it was dropped in favor of "Inferno" as they're both very similar to each other. 
-"Inferno" is an interpolation over the [CIELAB colorspace](https://en.wikipedia.org/wiki/CIELAB_color_space) which is calibrated to correlate between the numerical change vs human-percieved change. "Extended Black Body" on the other hand is simply an interpolation between a few hues that is corrected for brightness (ie. not as rigorous). That said, "Extended Black Body" isn't bad, its just not as good as "Inferno", but is definitely better than rainbow!
+"Inferno" is an interpolation over the [CIELAB colorspace](https://en.wikipedia.org/wiki/CIELAB_color_space) which is calibrated to correlate between the numerical change vs human-perceived change. "Extended Black Body" on the other hand is simply an interpolation between a few hues that is corrected for brightness (ie. not as rigorous). That said, "Extended Black Body" isn't bad, its just not as good as "Inferno", but is definitely better than rainbow!
 
 ## Use:
 
