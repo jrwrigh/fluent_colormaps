@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # # Creating New Colormaps
@@ -8,6 +8,7 @@
 
 import numpy as np
 from mpl2flu import *
+from pathlib import Path
 
 
 # ### Write Colormap from an RGB Text File
@@ -18,7 +19,7 @@ from mpl2flu import *
 
 url = 'https://github.com/pnnl/cmaputil/raw/master/colormaps/cividis.txt'
 rgb = read_data(url)
-filename = 'colormaps/cividis.colormap'
+filename = Path('../colormaps/cividis.colormap')
 write_cmap(rgb,filename);
 
 

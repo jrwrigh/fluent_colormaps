@@ -1,1 +1,0 @@
-from fluent_colormaps.mpl2flu import mpl2flu as mpl2flu
