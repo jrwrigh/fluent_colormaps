@@ -1,3 +1,6 @@
 .vscode
 .history
 .ipynb_checkpoints
+*.pyc
+__pycache__
+settings.json
