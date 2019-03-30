@@ -7,16 +7,17 @@ choice = 2
 if choice == 1:
     scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
 elif choice == 2:
-    scriptpath = Path('./colormaps')
+        # for use when running in the file in ipython console
+    scriptpath = Path('./translation_tools')
 
 ## Inputs:
-# Path to the CSV file
+    # Path to the CSV file
 csv_path = scriptpath / './original_csvs/viridis-table-float-0128.csv'
-# Name and location for the colormap to be created
-colormapfilename = scriptpath / 'viridis.colormap'
-# Name that Fluent uses to reference the colormap
+    # Name and location for the colormap to be created
+colormapfilename = scriptpath / '../colormaps/viridis.colormap'
+    # Name that Fluent uses to reference the colormap
 fluentcolormapname = 'viridis'
-# Does CSV have header?
+    # Does CSV have header?
 csv_has_header = True
 
 ## Translation:
